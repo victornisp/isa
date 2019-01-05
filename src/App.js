@@ -36,6 +36,9 @@ class App extends Component {
         */}
 
         <Prueba/>
+
+        <MainMatForm/>
+
         <div className="container">
           <h1>{todos.length}</h1>
           <div className="row">
@@ -44,7 +47,7 @@ class App extends Component {
         </div>
         <img src={logo} className="App-logo" alt="logo" />
       </div>
-      
+
     );
   }
 }

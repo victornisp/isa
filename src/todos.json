@@ -24,5 +24,24 @@
         "description": "necesitamos 7 tubos de ppr de 110 x 75",
         "priority": "alta"
     }
+  ],
+  "solicitud":[
+    {
+      "ID":"1212",
+      "Cant":"5",
+      "Unid":"20",
+      "Descripcion material":"SeLLoS de pulgada y media",
+      "Observacion":"Ninguna",
+      "Envio":"60",
+      "Saldo":"40",
+    },{
+      "ID":"1213",
+      "Cant":"5",
+      "Unid":"20",
+      "Descripcion material":"SeLLoS de 1/2",
+      "Observacion":"Ninguna",
+      "Envio":"60",
+      "Saldo":"40",
+    }
   ]
 }
