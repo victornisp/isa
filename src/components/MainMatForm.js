@@ -1,8 +1,27 @@
 import React from 'react';
+import { solicitudes } from '../todos.json';
 
 class MainMatForm extends React.Component {
+  constructor(){
+    super();
+    this.state = { solicitudes }
+  }
 
   render(){
+    const solicitudesTr = this.state.solicitudes.map((solicitud, i) => {
+      return(
+         <tr>
+           <th scope="row">{solicitud.id}</th>
+           <td>{solicitud.cant}</td>
+           <td>{solicitud.unid}</td>
+           <td>{solicitud.descripcion_material}</td>
+           <td>{solicitud.observacion}</td>
+           <td>{solicitud.envio}</td>
+           <td>{solicitud.saldo}</td>
+         </tr>
+      );
+    });
+
     return(
 
       <div className="container">
@@ -28,15 +47,7 @@ class MainMatForm extends React.Component {
                 <td>Otto</td>
                 <td>@mdo</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
+              {solicitudesTr}
             </tbody>
         </table>
       </div>

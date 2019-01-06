@@ -25,23 +25,23 @@
         "priority": "alta"
     }
   ],
-  "solicitud":[
+  "solicitudes":[
     {
-      "ID":"1212",
-      "Cant":"5",
-      "Unid":"20",
-      "Descripcion material":"SeLLoS de pulgada y media",
-      "Observacion":"Ninguna",
-      "Envio":"60",
-      "Saldo":"40",
+      "id":"1212",
+      "cant":"5",
+      "unid":"20",
+      "descripcion_material":"SeLLoS de pulgada y media",
+      "observacion":"Ninguna",
+      "envio":"60",
+      "saldo":"40"
     },{
-      "ID":"1213",
-      "Cant":"5",
-      "Unid":"20",
-      "Descripcion material":"SeLLoS de 1/2",
-      "Observacion":"Ninguna",
-      "Envio":"60",
-      "Saldo":"40",
+      "id":"1213",
+      "cant":"5",
+      "unid":"20",
+      "descripcion_material":"SeLLoS de 1/2",
+      "observacion":"Ninguna",
+      "envio":"60",
+      "saldo":"40"
     }
   ]
 }

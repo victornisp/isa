@@ -6,12 +6,12 @@ import NavLoginForm from './components/NavLoginForm';
 import MainMatForm from './components/MainMatForm';
 import Prueba from './components/Prueba';
 
-import { todos } from './todos.json';
+import { todos, solicitudes } from './todos.json';
 
 class App extends Component {
   constructor(){
     super();
-    this.state = { todos }
+    this.state = { todos, solicitudes }
   }
 
   render() {
@@ -36,7 +36,6 @@ class App extends Component {
         */}
 
         <Prueba/>
-
         <MainMatForm/>
 
         <div className="container">
