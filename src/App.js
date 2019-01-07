@@ -4,17 +4,20 @@ import './App.css';
 import JumbLoginText from './components/JumbLoginText';
 import NavLoginForm from './components/NavLoginForm';
 import MainMatForm from './components/MainMatForm';
-import Prueba from './components/Prueba';
+import MainNav from './components/MainNav';
+import { Link, Route} from 'react-router-dom';
+import Perfil from './components/Perfil';
 
-import { todos, solicitudes } from './todos.json';
+import { usuarios, solicitudes } from './todos.json';
 
 class App extends Component {
   constructor(){
     super();
-    this.state = { todos, solicitudes }
+    this.state = { usuarios, solicitudes }
   }
 
   render() {
+    /*
     const todos = this.state.todos.map((todo, i) => {
       return(
         <div class="card">
@@ -26,25 +29,18 @@ class App extends Component {
           </div>
         </div>
         );
-    });
+    });*/
     return (
       <div className="App">
 
-      {/*  vista antes de login
-        <NavLoginForm/>
-        <JumbLoginText/>
-        */}
-
-        <Prueba/>
-        <MainMatForm/>
+        <MainNav/>
 
         <div className="container">
-          <h1>{todos.length}</h1>
-          <div className="row">
-            { todos }
-          </div>
+          <Route path="/inicio" component={JumbLoginText}/>
+          <Route path="/solicitudes" component={MainMatForm}/>
+          <Route path="/perfil" component={Perfil}/>
+          <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <img src={logo} className="App-logo" alt="logo" />
       </div>
 
     );

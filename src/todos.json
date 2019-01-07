@@ -1,28 +1,17 @@
 {
-  "todos":[
+  "usuarios":[
     {
-        "title": "quiero material",
-        "respondible": "si",
-        "description": "7 ppr 30/2 y 23 tubos galvanizados de 2 mtrs",
-        "priority": "media"
-    },
-    {
-        "title": "manda sellos",
-        "respondible": "no",
-        "description": "5 sellos de 1/2",
-        "priority": "baja"
-    },
-    {
-        "title": "manda tubos",
-        "respondible": "no",
-        "description": "necesitamos 7 tubos de ppr de 110 x 75",
-        "priority": "urgente"
-    },
-    {
-        "title": "manda todo wn",
-        "respondible": "no",
-        "description": "necesitamos 7 tubos de ppr de 110 x 75",
-        "priority": "alta"
+        "rut": "18835",
+        "pass": "123",
+        "nombre":"Franco",
+        "correo": "franco@gmail.com",
+        "telefono": "87876565"
+    },{
+        "rut": "18888",
+        "pass": "123",
+        "nombre":"Pepe",
+        "correo": "franco@gmail.com",
+        "telefono": "12324323"
     }
   ],
   "solicitudes":[
